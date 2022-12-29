@@ -28,6 +28,7 @@ apt-get install -y git pkg-config python3 python3-distutils \
 
 cd /mnt/persist/
 git clone https://github.com/Microsoft/vcpkg.git
+git checkout 8d9c52191e039fe49c580807efee502d22f32786
 ./vcpkg/bootstrap-vcpkg.sh
 cd vcpkg/
 ./vcpkg install opencv4[dnn,cudnn]:x64-linux
@@ -41,5 +42,6 @@ Install CUDA 11.7.1 + CuDNN
 git clone https://github.com/Microsoft/vcpkg.git
 ./vcpkg/bootstrap-vcpkg.sh
 cd vcpkg/
+git checkout 8d9c52191e039fe49c580807efee502d22f32786
 ./vcpkg install opencv4[dnn,cudnn]:x64-windows-static-md
 ```
